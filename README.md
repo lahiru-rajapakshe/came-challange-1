@@ -1,6 +1,6 @@
 # came-challange-1
 
-This is a simple Java console application I created. It's a basic program that prints "Hello" to the console.
+This is a Java console application that implements the Merge Sort algorithm. The program sorts arrays of integers in ascending order using a custom implementation without relying on built-in sorting functions.
 
 ## Copyright
 
@@ -37,10 +37,33 @@ javac src/Main.java
 java -cp src Main
 ```
 
-You should see this output:
-```
-Hello
-```
+The program will run several test cases and display the results. You'll see tests for:
+- Mixed positive and negative numbers
+- Arrays with duplicates
+- Already sorted arrays
+- Reverse sorted arrays
+- Empty arrays
+- Single element arrays
+- Arrays with identical values
+
+## Features
+
+The merge sort implementation includes:
+
+- **Custom Implementation**: No built-in sorting methods used
+- **Divide and Conquer**: Recursively divides the array into halves
+- **Efficient Merging**: Combines sorted subarrays in linear time
+- **Time Complexity**: O(n log n) for all cases
+- **Space Complexity**: O(n) for auxiliary arrays
+- **Handles All Cases**: Works with positive numbers, negative numbers, zeros, and duplicates
+
+## How It Works
+
+The `sortAndPrint()` function accepts an array of integers and:
+1. Recursively divides the array into smaller subarrays
+2. Sorts each subarray
+3. Merges the sorted subarrays back together
+4. Prints the final sorted array to stdout
 
 ## Learn More About Java
 
